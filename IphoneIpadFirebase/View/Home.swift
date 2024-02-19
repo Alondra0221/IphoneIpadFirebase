@@ -68,10 +68,11 @@ struct Home: View {
                         }
                         Spacer()
                     }.frame(width: widthMenu - 200)
-                    .background(Color.purple)
+                    .background(Color.white)
                 }
             }
         }.background(Color.gray.opacity(0.2))
     }
 }
+
 

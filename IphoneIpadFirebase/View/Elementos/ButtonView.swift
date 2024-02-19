@@ -28,7 +28,8 @@ struct ButtonView: View {
             Text(title)
                 .font(.title)
                 .fontWeight(index == title ? .bold : .none)
-                .foregroundStyle(index == title ? .white : .white.opacity(0.6))
+                .foregroundStyle(index == title ? LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .leading, endPoint: .trailing) : LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .leading, endPoint: .trailing) )
+                
         }
     }
 }

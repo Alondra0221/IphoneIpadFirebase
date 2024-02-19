@@ -69,8 +69,9 @@ struct NavBar: View {
             }
         }.padding(.top,50)
          .padding()
-         .background(Color("skyblue"))
+         .background(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .leading, endPoint: .trailing))
     }
 }
+
 
 
