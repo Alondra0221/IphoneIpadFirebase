@@ -48,7 +48,7 @@ struct EditarView: View {
                         mostrarMenu.toggle()
                     }){
                         Text("Submit Image")
-                            .foregroundStyle(Color("skyblue"))
+                            .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .leading, endPoint: .trailing))
                             .bold()
                             .font(.largeTitle)
                     }.confirmationDialog("Menu", isPresented: $mostrarMenu, titleVisibility: .visible){
@@ -99,7 +99,7 @@ struct EditarView: View {
                             .font(.title)
                             .padding(5)
                             .frame(width: 150, height: 45)
-                    }.background(Color("skyblue"))
+                    }.background(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .leading, endPoint: .trailing))
                      .clipShape(Capsule())
                      .padding(.top, 20)
                      

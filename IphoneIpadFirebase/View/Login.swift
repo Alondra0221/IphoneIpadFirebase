@@ -45,7 +45,7 @@ struct Login: View {
                         .background(.white)     // adding some white background
                       Spacer()                  // pushing the text to the left
                     }
-                    .padding(.leading, 8)
+                    .padding(.leading, device == .phone ?  8 : 200)
                     .offset(CGSize(width: 0, height: -20))  // pushign the text up to overlay the border of the input field
                   }.padding(4)
                     .padding(.bottom, 10)
@@ -68,7 +68,7 @@ struct Login: View {
                         .background(.white)     // adding some white background
                       Spacer()                  // pushing the text to the left
                     }
-                    .padding(.leading, 8)
+                    .padding(.leading, device == .phone ?  8 : 200)
                     .offset(CGSize(width: 0, height: -20))  // pushign the text up to overlay the border of the input field
                   }.padding(4)
                 
@@ -84,7 +84,7 @@ struct Login: View {
                     Text("Login")
                         .fontWeight(.heavy)
                         .font(.title3)
-                        .frame(maxWidth: .infinity)
+                        .frame(maxWidth: device == .phone ? .infinity : 380)
                         .padding()
                         .foregroundColor(.white)
                         .background(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .leading, endPoint: .trailing))
@@ -105,7 +105,7 @@ struct Login: View {
                     Text("Sign In")
                         .fontWeight(.heavy)
                         .font(.title3)
-                        .frame(maxWidth: .infinity)
+                        .frame(maxWidth: device == .phone ? .infinity : 380)
                         .padding()
                         .foregroundColor(.white)
                         .background(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .leading, endPoint: .trailing))

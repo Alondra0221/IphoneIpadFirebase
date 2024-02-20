@@ -68,7 +68,7 @@ struct Home: View {
                         }
                         Spacer()
                     }.frame(width: widthMenu - 200)
-                    .background(Color.white)
+                    .background(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .leading, endPoint: .trailing))
                 }
             }
         }.background(Color.gray.opacity(0.2))
